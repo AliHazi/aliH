@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LipidController">
+   <children>
+      <ButtonBar layoutX="200.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <Button fx:id="calcBtn" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+                  <Button fx:id="eraseButton" minWidth="22.0" mnemonicParsing="false" onAction="#erase" prefHeight="25.0" text="Erase" />
+               </buttons>
+            </ButtonBar>
+         </buttons>
+      </ButtonBar>
+      <TextField fx:id="ldl" layoutX="194.0" layoutY="130.0" text="0" />
+      <TextField fx:id="hdl" layoutX="194.0" layoutY="188.0" text="0" />
+      <Label layoutX="89.0" layoutY="134.0" text="LDL Cholestrol" />
+      <Label layoutX="87.0" layoutY="192.0" text="HDL Cholestrol" />
+      <Label layoutX="141.0" layoutY="71.0" prefHeight="17.0" prefWidth="264.0" text="Total Cholestrol Calculator" />
+      <Label layoutX="87.0" layoutY="251.0" text="Triglycerides" />
+      <TextField fx:id="triglycerides" layoutX="194.0" layoutY="247.0" text="0" />
+      <Label fx:id="results" layoutX="127.0" layoutY="289.0" prefHeight="34.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>
